@@ -8,5 +8,5 @@ var options = {
     "twitter": "1",
     "Embed": "A",
     "cEmbed": "",
-    "warningLabel": "The embed code reqiures that you have Bootstrap on your site."
+    "warningLabel": "The embed code requires that you have Bootstrap on your site."
 };
