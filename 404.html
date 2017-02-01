@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>404 Page Not Found</title>
-    <link rel="stylesheet" href="https://clarkhacks.com/a/css/404.css">
+    <link rel="stylesheet" href="https://cdn.clarkhacks.com/a/css/404.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,24 @@
             <a class="button" href="https://clarkhacks.com/">Go to homepage</a>
         </div>
     </div>
-    <p class="credit">Image: <a href="https://imgur.com/gallery/9cR4L">Imgur User</a></p>
+    <p class="credit">Image: <a href="http://bsnscb.com/developer-wallpapers/39471622.html">BSNSCB</a></p>
+    <!--
+    <script>
+      var currentURL = window.location.href;
+	  var chUrlQuery = (getLastPart(currentURL));
+console.log(getLastPart(url1));
+function getLastPart(url) {
+    var parts = url.split("/");
+    return (url.lastIndexOf('/') !== url.length - 1 ? parts[parts.length - 1] : parts[parts.length - 2]);
+}
+
+    </script>
+    -->
+    <script>
+      var url = window.location.href;
+var chParams = url.split('?');
+var paramsValue = chParams[1];
+console.log(paramsValue);
+    </script>
   </body>
 </html>
