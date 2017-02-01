@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: url("/a/img/404.gif") no-repeat center center fixed;
+  background: url("/a/img/default.png") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Raleway', sans-serif;
   background-color: #342643;
