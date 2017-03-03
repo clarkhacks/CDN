@@ -1,0 +1,26 @@
+[
+ {
+   "id": 1,
+   "name": "Cat",
+   "price": "$10.00",
+   "tags": "feline, easy, cute"
+ },
+ {
+   "id": 2,
+   "name": "Dog",
+   "price": "$20.00",
+   "tags": "canine, easy, furry"
+ },
+ {
+   "id": 3,
+   "name": "Hamster",
+   "price": "$5.00",
+   "tags": "rodent, smelly"
+ },
+ {
+   "id": 4,
+   "name": "Mouse",
+   "price": "$1.00",
+   "tags": "rodent, cute"
+ }
+]
