@@ -1,0 +1,12 @@
+{
+	"headers": {
+		"date": "Date",
+		"company": "Company",
+		"location": "Location"
+	},
+	"rows": {
+		"date": "09/18/2011",
+		"company": "Company name",
+		"location": "US"
+	}
+}
