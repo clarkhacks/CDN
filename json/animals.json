@@ -1,4 +1,5 @@
-[
+{
+ "animals": [
  {
    "id": 1,
    "name": "Cat",
@@ -22,5 +23,6 @@
    "name": "Mouse",
    "price": "$1.00",
    "tags": "rodent, cute"
- }
-]
+  }
+ ]
+}
