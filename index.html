@@ -58,6 +58,8 @@
 <h3>Index of CDN</h3>
 <pre>
   CDN
+  |   anchorme.min.js
+  |   konami.js
   |
   +---bootstrap
   |   \---3.3.7
@@ -71,65 +73,45 @@
   |       |       bootstrap.min.css
   |       |       bootstrap.min.css.map
   |       |
-  |       +---fonts
-  |       |       ...
+  |       +----XXX-fonts-XXX
   |       |
   |       \---js
   |               bootstrap.js
   |               bootstrap.min.js
+  |               npm.js
   |
-  +---FireBugLite
-  |   |
-  |   +---build
-  |   |   |   firebug-lite-beta.js
-  |   |   |   firebug-lite-debug.js
-  |   |   |   firebug-lite.js
+  |
+  +---emojify
+  |   \---1.1.0
+  |       +---css
+  |       |   +---basic
+  |       |   |       emojify.css
+  |       |   |       emojify.min.css
   |       |   |
-  |       |   +---includes
-  |       |   |       jquery-1.6.2.min.js
+  |       |   +---data-uri
+  |       |   |       emojify-emoticons.css
+  |       |   |       emojify-emoticons.min.css
+  |       |   |       emojify.css
+  |       |   |       emojify.min.css
   |       |   |
-  |       |   +---script
-  |       |   +---template
-  |       |   |       issueXXXX.html
-  |       |   |       testcase.css
+  |       |   \---sprites
+  |       |           emojify-emoticons.css
+  |       |           emojify-emoticons.min.css
+  |       |           emojify.css
+  |       |           emojify.min.css
+  |       |
+  |       +---images
+  |       |   +---basic/ XXX-EMOJIS-XXX
   |       |   |
-  |       |   \---xhr
-  |       |       +---2756
-  |       |       |       issue2756.html
-  |       |       |       test.txt
-  |       |       |
-  |       |       +---2840
-  |       |       |       issue2840.html
-  |       |       |       test.txt
-  |       |       |
-  |       |       +---2846
-  |       |       |       issue2846.html
-  |       |       |       test.txt
-  |       |       |
-  |       |       +---2977
-  |       |       |       issue2977.html
-  |       |       |       post.php
-  |       |       |
-  |       |       +---3504
-  |       |       |       issue3504.html
-  |       |       |       test.txt
-  |       |       |
-  |       |       \---4472
-  |       |               issue4472.html
+  |       |   \---sprites
+  |       |           emojify-emoticons.png
+  |       |           emojify-emoticons@2x.png
+  |       |           emojify.png
+  |       |           emojify@2x.png
   |       |
-  |       +---examples
-  |       |       async.html
-  |       |       fail.html
-  |       |       sync.html
-  |       |       test.txt
-  |       |
-  |       +---fbtest
-  |       |       fbtest.css
-  |       |       fbtest.js
-  |       |
-  |       \---testlists
-  |               testlist1.4.js
-  |               testlistExample.js
+  |       \---js
+  |               emojify.js
+  |               emojify.min.js
   |
   +---fontawesome
   |   \---4.7.0
@@ -137,29 +119,161 @@
   |       |       font-awesome.css
   |       |       font-awesome.min.css
   |       |
-  |       +---fonts
-  |       |       ...
-  |       |
-  |       +---less
-  |       |       ...
-  |       |
-  |       \---scss
-  |               ...
+  |       \----XXXfonts-XXX
+  |
+  +---image
+  |       errorimg.png
+  |       noimg.png
   |
   +---JekyllShareModal
   |       index.js
   |       jquery.qrcode.js
-  |       modal.html
   |       options.js
   |       styles.css
+  |
+  +---json
+  |       animals.json
+  |       emp1.json
+  |       emps.json
+  |       ex.json
+  |       noex
+  |       office.json
+  |       public.json
+  |       users.json
+  |
+  +---jsontable
+  |       jsontable.js
+  |
+  +---materialize
+  |   +---css
+  |   |       materialize.css
+  |   |       materialize.min.css
+  |   |
+  |   +---fonts
+  |   |   \---XXX-roboto-XXX
+  |   |
+  |   \---js
+  |           materialize.js
+  |           materialize.min.js
+  |
+  +---reveal
+  |   \---3.4.1
+  |       +---css
+  |       |   |   reveal.css
+  |       |   |   reveal.scss
+  |       |   |
+  |       |   +---print
+  |       |   |       paper.css
+  |       |   |       pdf.css
+  |       |   |
+  |       |   \---theme
+  |       |       |   beige.css
+  |       |       |   black.css
+  |       |       |   blood.css
+  |       |       |   league.css
+  |       |       |   moon.css
+  |       |       |   night.css
+  |       |       |   README.md
+  |       |       |   serif.css
+  |       |       |   simple.css
+  |       |       |   sky.css
+  |       |       |   solarized.css
+  |       |       |   white.css
+  |       |       |
+  |       |       +---source
+  |       |       |       beige.scss
+  |       |       |       black.scss
+  |       |       |       blood.scss
+  |       |       |       league.scss
+  |       |       |       moon.scss
+  |       |       |       night.scss
+  |       |       |       serif.scss
+  |       |       |       simple.scss
+  |       |       |       sky.scss
+  |       |       |       solarized.scss
+  |       |       |       white.scss
+  |       |       |
+  |       |       \---template
+  |       |               mixins.scss
+  |       |               settings.scss
+  |       |               theme.scss
+  |       |
+  |       +---js
+  |       |       reveal.js
+  |       |
+  |       +---lib
+  |       |   +---css
+  |       |   |       zenburn.css
+  |       |   |
+  |       |   +---font
+  |       |   |   +---XXX-FONTS-XXX
+  |       |   \---js
+  |       |           classList.js
+  |       |           head.min.js
+  |       |           html5shiv.js
+  |       |
+  |       \---plugin
+  |           +---highlight
+  |           |       highlight.js
+  |           |
+  |           +---markdown
+  |           |       example.html
+  |           |       example.md
+  |           |       markdown.js
+  |           |       marked.js
+  |           |
+  |           +---math
+  |           |       math.js
+  |           |
+  |           +---multiplex
+  |           |       client.js
+  |           |       index.js
+  |           |       master.js
+  |           |       package.json
+  |           |
+  |           +---notes
+  |           |       notes.html
+  |           |       notes.js
+  |           |
+  |           +---notes-server
+  |           |       client.js
+  |           |       index.js
+  |           |       notes.html
+  |           |
+  |           +---print-pdf
+  |           |       print-pdf.js
+  |           |
+  |           +---search
+  |           |       search.js
+  |           |
+  |           \---zoom-js
+  |                   zoom.js
   |
   +---sharebtns
   |   \---js
   |           share.min.js
   |
-  \---swal
-          sweet-alert.css
-          sweet-alert.js
+  +---simplemde
+  |       mde.min.css
+  |       mde.min.js
+  |
+  +---swal
+  |       sweet-alert.css
+  |       sweet-alert.js
+  |
+  +---swal2
+  |       sweet-alert2.css
+  |       sweet-alert2.js
+  |       sweet-alert2.min.css
+  |       sweet-alert2.min.js
+  |
+  \---table-populator
+          asc.gif
+          bg.gif
+          desc.gif
+          loading_1.gif
+          table-populator.css
+          table-populator.js
 
 
 
