@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.title {
+  text-align: center;
+}
+input {
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+#searchable {
+  text-align: center;
+}
+.button {
+  width: 100%;
+}
+#formatView {
+  margin-top: 1.3em;
+  width: 100%;
+}
+.link {
+  font-size: 1em;
+  margin: .3em;
+}
+.hidden {
+  display: none;
+}
+hr{
+  border: 0;
+  border-bottom: 3px dashed;
+  width: 100%;
+}
+
+a:hover, a:active, a {
+  color: #ebebeb;
+  text-decoration: none;
+}

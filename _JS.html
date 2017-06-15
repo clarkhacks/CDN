@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by Clark Weckmann</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdn.clarkhacks.com/skeleton/2.0.4/css/skeleton.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+  <link rel="stylesheet" href="/_ASSETS/css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="row">
+        <div class="nine columns">
+          <h1 class="title">ClarkHacks CDN</h1>
+        </div>
+        <div class="three columns">
+          <select id="formatView" onChange="cssOrJsFun()">
+          <option value="JS">JS</option>
+          <option value="CSS">CSS</option>
+        </select>
+        </div>
+      </div>
+      <p class="disc">*Versions Vary</p>
+    </div>
+    <div class="form-inline">
+      <div class="form-group">
+        <input class="form-control" id="searchInput" type="search" placeholder="Search" />
+      </div>
+    </div>
+    <div id="searchable">
+      <div class="row">
+        <div class="four columns">Ace</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/ace/src-min/ace.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Bootstrap</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Clipboard</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/clipboard/1.6.0/clipboard.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Emojify</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/emojify/1.1.0/js/emojify.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">FireBugLite</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/FireBugLite/build/firebug-lite.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Json Table</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/jsontable/jsontable.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Materialize</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/materialize/js/materialize.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Reveal</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/reveal/3.4.1/js/reveal.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Simple MDE</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/simplemde/mde.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Sweet Alert</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/swal/sweet-alert.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Sweet Alert 2</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/swal2/sweet-alert2.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Table Populator</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/table-populator/table-populator.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">easyType</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/easytype.min.js" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Konami</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/konami.js" />
+        </div>
+      </div>
+      <h6 class="moreinfo">For more options visit the <a href="https://github.com/clarkhacks/CDN">git repo</a>.
+        <!-- <br/>Read all about the ClarkHacks CDN <a href="/_about">here</a>. -->s
+      </h6>
+    </div>
+    <hr/>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  <script src="/_ASSETS/js/index.js"></script>
+
+</body>
+
+</html>

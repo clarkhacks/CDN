@@ -1,289 +1,109 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Clark Hacks | CDN</title>
-        <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="image/png" href="https://clarkhacks.com/a/img/favicon.png">
-        <link href="https://clarkhacks.com/a/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://clarkhacks.com/a/css/style.css">
-        <style>
-            /* The ribbons */
-            .corner-ribbon {
-                width: 200px;
-                background: #e43;
-                position: absolute;
-                top: 25px;
-                left: -50px;
-                text-align: center;
-                line-height: 50px;
-                letter-spacing: 1px;
-                color: #f0f0f0;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-            }
-            /* Custom styles */
-            .corner-ribbon.sticky {
-                position: fixed;
-            }
-            .corner-ribbon.shadow {
-                box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-            }
-            .corner-ribbon.top-right {
-                top: 25px;
-                right: -50px;
-                left: auto;
-                transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
-            }
-            .corner-ribbon a {
-                text-decoration: none;
-                color: #fff;
-                font-size: 140%;
-            }
-            .corner-ribbon.blue {
-                background: #39d;
-            }
-            .target {
-                font-size:120%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="corner-ribbon top-right sticky blue"><a href="https://clarkhacks.com/">Home</a>
-            </div>
-<h1>Clark Hacks CDN</h1>
-<h3>Content Deliver Network for hosted projects.</h3>
-<h3>Index of CDN</h3>
-<pre>
-  CDN
-  |   anchorme.min.js
-  |   konami.js
-  |
-  +---bootstrap
-  |   \---3.3.7
-  |       +---css
-  |       |       bootstrap-theme.css
-  |       |       bootstrap-theme.css.map
-  |       |       bootstrap-theme.min.css
-  |       |       bootstrap-theme.min.css.map
-  |       |       bootstrap.css
-  |       |       bootstrap.css.map
-  |       |       bootstrap.min.css
-  |       |       bootstrap.min.css.map
-  |       |
-  |       +----XXX-fonts-XXX
-  |       |
-  |       \---js
-  |               bootstrap.js
-  |               bootstrap.min.js
-  |               npm.js
-  |
-  |
-  +---emojify
-  |   \---1.1.0
-  |       +---css
-  |       |   +---basic
-  |       |   |       emojify.css
-  |       |   |       emojify.min.css
-  |       |   |
-  |       |   +---data-uri
-  |       |   |       emojify-emoticons.css
-  |       |   |       emojify-emoticons.min.css
-  |       |   |       emojify.css
-  |       |   |       emojify.min.css
-  |       |   |
-  |       |   \---sprites
-  |       |           emojify-emoticons.css
-  |       |           emojify-emoticons.min.css
-  |       |           emojify.css
-  |       |           emojify.min.css
-  |       |
-  |       +---images
-  |       |   +---basic/ XXX-EMOJIS-XXX
-  |       |   |
-  |       |   \---sprites
-  |       |           emojify-emoticons.png
-  |       |           emojify-emoticons@2x.png
-  |       |           emojify.png
-  |       |           emojify@2x.png
-  |       |
-  |       \---js
-  |               emojify.js
-  |               emojify.min.js
-  |
-  +---fontawesome
-  |   \---4.7.0
-  |       +---css
-  |       |       font-awesome.css
-  |       |       font-awesome.min.css
-  |       |
-  |       \----XXXfonts-XXX
-  |
-  +---image
-  |       errorimg.png
-  |       noimg.png
-  |
-  +---JekyllShareModal
-  |       index.js
-  |       jquery.qrcode.js
-  |       options.js
-  |       styles.css
-  |
-  +---json
-  |       animals.json
-  |       emp1.json
-  |       emps.json
-  |       ex.json
-  |       noex
-  |       office.json
-  |       public.json
-  |       users.json
-  |
-  +---jsontable
-  |       jsontable.js
-  |
-  +---materialize
-  |   +---css
-  |   |       materialize.css
-  |   |       materialize.min.css
-  |   |
-  |   +---fonts
-  |   |   \---XXX-roboto-XXX
-  |   |
-  |   \---js
-  |           materialize.js
-  |           materialize.min.js
-  |
-  +---reveal
-  |   \---3.4.1
-  |       +---css
-  |       |   |   reveal.css
-  |       |   |   reveal.scss
-  |       |   |
-  |       |   +---print
-  |       |   |       paper.css
-  |       |   |       pdf.css
-  |       |   |
-  |       |   \---theme
-  |       |       |   beige.css
-  |       |       |   black.css
-  |       |       |   blood.css
-  |       |       |   league.css
-  |       |       |   moon.css
-  |       |       |   night.css
-  |       |       |   README.md
-  |       |       |   serif.css
-  |       |       |   simple.css
-  |       |       |   sky.css
-  |       |       |   solarized.css
-  |       |       |   white.css
-  |       |       |
-  |       |       +---source
-  |       |       |       beige.scss
-  |       |       |       black.scss
-  |       |       |       blood.scss
-  |       |       |       league.scss
-  |       |       |       moon.scss
-  |       |       |       night.scss
-  |       |       |       serif.scss
-  |       |       |       simple.scss
-  |       |       |       sky.scss
-  |       |       |       solarized.scss
-  |       |       |       white.scss
-  |       |       |
-  |       |       \---template
-  |       |               mixins.scss
-  |       |               settings.scss
-  |       |               theme.scss
-  |       |
-  |       +---js
-  |       |       reveal.js
-  |       |
-  |       +---lib
-  |       |   +---css
-  |       |   |       zenburn.css
-  |       |   |
-  |       |   +---font
-  |       |   |   +---XXX-FONTS-XXX
-  |       |   \---js
-  |       |           classList.js
-  |       |           head.min.js
-  |       |           html5shiv.js
-  |       |
-  |       \---plugin
-  |           +---highlight
-  |           |       highlight.js
-  |           |
-  |           +---markdown
-  |           |       example.html
-  |           |       example.md
-  |           |       markdown.js
-  |           |       marked.js
-  |           |
-  |           +---math
-  |           |       math.js
-  |           |
-  |           +---multiplex
-  |           |       client.js
-  |           |       index.js
-  |           |       master.js
-  |           |       package.json
-  |           |
-  |           +---notes
-  |           |       notes.html
-  |           |       notes.js
-  |           |
-  |           +---notes-server
-  |           |       client.js
-  |           |       index.js
-  |           |       notes.html
-  |           |
-  |           +---print-pdf
-  |           |       print-pdf.js
-  |           |
-  |           +---search
-  |           |       search.js
-  |           |
-  |           \---zoom-js
-  |                   zoom.js
-  |
-  +---sharebtns
-  |   \---js
-  |           share.min.js
-  |
-  +---simplemde
-  |       mde.min.css
-  |       mde.min.js
-  |
-  +---swal
-  |       sweet-alert.css
-  |       sweet-alert.js
-  |
-  +---swal2
-  |       sweet-alert2.css
-  |       sweet-alert2.js
-  |       sweet-alert2.min.css
-  |       sweet-alert2.min.js
-  |
-  \---table-populator
-          asc.gif
-          bg.gif
-          desc.gif
-          loading_1.gif
-          table-populator.css
-          table-populator.js
+<head>
+  <meta charset="UTF-8">
+  <title>ClarkHacks CDN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel='stylesheet prefetch' href='https://cdn.clarkhacks.com/skeleton/2.0.4/css/skeleton.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
+  <link rel="stylesheet" href="/_ASSETS/css/style.css">
 
+</head>
 
-</pre>
-<h1>BookMarklets</h1>
-<a href="data:text/html,<title>Text Editor</title><body contenteditable style='font-size:2rem;font-family:Helvetica;line-height:1.4;max-width:60rem;margin:0 auto;padding:4rem;'>">Text Editor</a>
-  <br>
-  <a href="javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0">Quick Edit</a>
-  <br>
-  <a href="javascript:var firebug=document.createElement('script');firebug.setAttribute('src','https://cdn.clarkhacks.com/FireBugLite/build/firebug-lite-debug.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug);">FireBugLite</a>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div class="row">
+        <div class="nine columns">
+          <h1 class="title">ClarkHacks CDN</h1>
         </div>
-    </body>
+        <div class="three columns">
+          <select id="formatView">
+          <option value="CSS" selected="selected">CSS</option>
+          <option value="JS">JS</option>
+        </select>
+        </div>
+      </div>
+      <p class="disc">*Versions Vary</p>
+    </div>
+    <div class="form-inline">
+      <div class="form-group">
+        <input class="form-control" id="searchInput" type="search" placeholder="Search" />
+      </div>
+    </div>
+    <div id="searchable">
+      <div class="row">
+        <div class="four columns">Bootstrap</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Emojify</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/emojify/1.1.0/css/basic/emojify.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Font Awesome</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/fontawesome/4.7.0/css/font-awesome.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Materialize</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/materialize/css/materialize.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Reveal</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/reveal/3.4.1/css/reveal.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Simple MDE</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/simplemde/mde.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Skeleton</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/skeleton/2.0.4/css/skeleton.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Sweet Alert</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/swal/sweet-alert.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Sweet Alert 2</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/swal2/sweet-alert2.min.css" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">Table Populator</div>
+        <div class="eight columns">
+          <input class="link" type="text" value="https://cdn.clarkhacks.com/table-populator/table-populator.css" />
+        </div>
+      </div>
+      <h6 class="moreinfo">For more options visit the <a href="https://github.com/clarkhacks/CDN">git repo</a>.
+        <!-- <br/>Read all about the ClarkHacks CDN <a href="/about">here</a>. -->
+      </h6>
+    </div>
+    <hr/>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  <script src="/_ASSETS/js/index.js"></script>
+
+</body>
+
 </html>
