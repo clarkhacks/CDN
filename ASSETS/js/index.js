@@ -14,7 +14,7 @@ function cssOrJsFun() {
   var cssOrJs = $('#formatView').find(":selected").text();
   console.log(cssOrJs);
   if (cssOrJs == "JS") {
-    window.location.href = "/_JS"
+    window.location.href = "/CDNJS"
   } else {
     window.location.href = "/"
   }
