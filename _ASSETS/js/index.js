@@ -19,4 +19,4 @@ function cssOrJsFun() {
   else {
     window.location.href = "/"
   }
-}
+} 
