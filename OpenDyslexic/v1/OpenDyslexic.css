@@ -1,0 +1,32 @@
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(OpenDyslexic-Regular.otf);
+}
+@font-face {
+    font-family: OpenDyslexic-Bold;
+    src: url(OpenDyslexic-Bold.otf);
+}
+@font-face {
+    font-family: OpenDyslexic-Bolditalic;
+    src: url(OpenDyslexic-Bolditalic.otf);
+}
+@font-face {
+    font-family: OpenDyslexic-Italic;
+    src: url(OpenDyslexic-Italic.otf);
+}
+
+body{
+  font-family: OpenDyslexic;
+}
+b{
+  font-family: OpenDyslexic-Bold;
+}
+i, em {
+  font-family: OpenDyslexic-Italic;
+}
+b > i, em {
+  font-family: OpenDyslexic-Bolditalic;
+}
+i, em > b {
+  font-family: OpenDyslexic-Bolditalic;
+}
