@@ -19,3 +19,9 @@ function cssOrJsFun() {
     window.location.href = "/"
   }
 }
+
+var fullUrl = window.location.href;
+var qUrl = fullUrl.substr(fullUrl.indexOf("?") + 1);
+if (qUrl === "skeleton") {
+  window.location = "https://cdn.clarkhacks.com/skeleton/2.0.4/css/skeleton.css"
+};
