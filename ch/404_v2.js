@@ -1,3 +1,8 @@
+if (window.location.href.indexOf("sh") > -1) {
+var shortCode = document.location.href.substring( document.location.href.lastIndexOf( '/' ) );
+window.location.href = "https://goo.gl" + shortCode;
+    }
+else{
 $(function() {
   // Set the command-line prompt to include the user's IP Address
   //$('.prompt').html('[' + codehelper_ip["IP"] + '@HTML5] # ');
@@ -248,3 +253,4 @@ var Terminal =
       output: output
     };
   };
+}
