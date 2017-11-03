@@ -1,3 +1,3 @@
 [submodule "gAB"]
 	path = gAB
-	url = https://github.com/clarkhacks/Gist-As-Backend.git
+	url = git@github.com:clarkhacks/Gist-As-Backend.git
