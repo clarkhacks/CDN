@@ -1858,3 +1858,31 @@
         return a.$ === n && (a.$ = dc), b && a.jQuery === n && (a.jQuery = cc), n
     }, typeof b === V && (a.jQuery = a.$ = n), n
 });
+
+// Gist As Backend Script | Version 1.0.0 | Clark (Hacks) Weckmann | MIT License
+var gAB = {
+  newData: function(a, b, c) {
+    $.ajax({
+    url: 'https://api.github.com/gists/' + gABGist,
+    type: 'PATCH',
+    beforeSend: function(xhr) {
+        xhr.setRequestHeader("Authorization", "token " + c);
+    },
+    data: '{"description": "Gist as Backend Update","public": false,"files": {"' + a + '": {"content": "' + b + '"}}}'
+}).done(function(r) {
+    console.log(r);
+});
+  },
+  readData: function(a, gABGist) {
+    $.ajax({
+      url: 'https://api.github.com/gists/' + gABGist,
+      type: 'GET',
+      dataType: 'jsonp'
+    }).success(function(g) {
+      var d = g.data.files[a].content;
+      return JSON.parse(d);
+    }).error(function(e) {
+      console.log(e);
+    });
+  }
+};
